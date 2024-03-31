@@ -1,0 +1,4 @@
+Django
+psycopg2-binary
+drf-yasg
+django-cors-headers
