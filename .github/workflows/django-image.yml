@@ -3,6 +3,8 @@ name: Build and Push Backend Docker Image
 
 on:
   push:
+    paths:
+      - 'backend/**'
     branches:
       - main
 
