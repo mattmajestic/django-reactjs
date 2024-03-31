@@ -3,15 +3,15 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-    const [message, setMessage] = useState('');
+    // const [message, setMessage] = useState('');
     const [focusIndex, setFocusIndex] = useState(0);
     const linksRef = useRef([]);
 
-    useEffect(() => {
-        fetch('http://localhost:8000/reactjs_endpoint/')
-            .then(response => response.json())
-            .then(data => setMessage(data.message));
-    }, []);
+    // useEffect(() => {
+    //     fetch('http://localhost:8000/reactjs_endpoint/')
+    //         .then(response => response.json())
+    //         .then(data => setMessage(data.message));
+    // }, []);
 
     useEffect(() => {
       const handleKeyDown = (event) => {
@@ -38,7 +38,7 @@ function App() {
                     Django + <code>ReactJS </code> on Docker
                 </p>
                 <p>
-                    Django is up and running! <code>{message}</code>
+                    Django is up and running! <code></code>
                 </p>
                 <div className="links">
                     <a href="https://www.djangoproject.com/" target="_blank" rel="noopener noreferrer" ref={el => linksRef.current[0] = el}>Django Docs</a>
